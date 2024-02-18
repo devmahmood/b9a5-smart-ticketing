@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Raleway & Inter font added -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- Styles -->
     <style>
         .raleway-font {
             font-family: "Raleway", sans-serif;
@@ -27,26 +30,76 @@
 </head>
 
 <body class="max-w-screen-2xl mx-auto inter-font">
-    <!-- Navbar Added-->
-    <nav class="flex lg:flex-row gap-4 justify-between items-center my-8">
-        <div>
-            <h1 class="text-4xl font-extrabold">Comfy Travels</h1>
-        </div>
-        <div>
-            <ul class="flex lg:flex-row gap-12">
-                <li>Home</li>
-                <li>About</li>
-                <li>Destination</li>
-                <li>Search</li>
-            </ul>
-        </div>
-        <div class="bg-green-100 flex gap-2 items-center px-4 py-2 rounded border border-[#1DD100]">
-            <h3 class="text-[#1DD100]">Bus</h3>
-            <img class="text-[#1DD100]" src="./images/bus-icon.png" alt="">
-        </div>
-    </nav>
+    <header id="header" class="max-w-screen-xl mx-auto">
+        <!-- Navbar Section-->
+        <nav class="flex lg:flex-row gap-4 justify-between items-center my-8">
+            <div>
+                <h1 class="text-4xl font-extrabold">Comfy Travels</h1>
+            </div>
+            <div>
+                <ul class="flex lg:flex-row gap-12">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Destination</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="bg-green-100 flex gap-2 items-center px-4 py-2 rounded border border-[#1DD100]">
+                <h3 class="text-[#1DD100]">Bus</h3>
+                <img class="text-[#1DD100]" src="./images/bus-icon.png" alt="">
+            </div>
+        </nav>
 
-
+        <!-- Banner section -->
+        <div class="relative">
+            <div class="bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center rounded-2xl h-screen">
+                <div class=" flex justify-center items-center h-full">
+                    <div class="text-center text-white space-y-6">
+                        <h1 class="text-4xl lg:text-6xl font-bold raleway-font">
+                            End-to-End Travel with <br>
+                            <span class="text-[#1DD100]">Comfy Travels</span>
+                        </h1>
+                        <p>
+                            Yes, you can run unit tests and view the results directly within the app. The <br>
+                            integrated testing
+                            features allow for a streamlined .
+                        </p>
+                        <button class="text-black bg-[#1DD100] rounded px-8 py-4 font-bold"><a href="#select-seat">Buy
+                                Tickets</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row gap-8 items-center lg:absolute -bottom-10 left-48">
+                <div class="bg-white border-b-2 border-[#1DD100] rounded-lg flex gap-4 px-8 py-4">
+                    <div>
+                        <img src="./images/people.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-bold">500K+</h2>
+                        <p>Registered users</p>
+                    </div>
+                </div>
+                <div class="bg-white border-b-2 border-[#1DD100] rounded-lg flex gap-4 px-8 py-4">
+                    <div>
+                        <img src="./images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-bold">1.7 lacks</h2>
+                        <p>Tickets sold</p>
+                    </div>
+                </div>
+                <div class="bg-white border-b-2 border-[#1DD100] rounded-lg flex gap-4 px-8 py-4">
+                    <div>
+                        <img src="./images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-bold">80K+</h2>
+                        <p>Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
 
     </main>
