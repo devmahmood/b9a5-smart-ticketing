@@ -101,7 +101,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Best Offer Section -->
         <section class="max-w-screen-xl mx-auto mt-24 mb-16">
             <h1 class="text-4xl text-center font-bold">Best offers for you</h1>
@@ -407,10 +407,57 @@
 
                 </div>
             </div>
-
-            </div>
         </section>
     </main>
+
+    <!-- POPUP Window -->
+    <div id="popup-div" class="h-screen w-full hidden">
+        <div class="flex justify-center h-full items-center">
+            <div class="card w-1/2 bg-base-100 shadow-xl bg-white">
+                <figure class="px-10 pt-10">
+                    <img src="./images/success.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title mb-10 text-green-600">SUCCESS</h2>
+                    <p class="font-bold">Thank you for Booking Our Bus Seats. <br>
+                        We are working hard to find the best service and deals for you.</p>
+                    <p class="font-light">Shortly you will find a confirmation in your email.</p>
+                    <div class="card-actions">
+                        <button id="popup-button"
+                            class="btn bg-green-600 text-white rounded-full px-16">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-[#030712] p-4 lg:p-16 text-white">
+        <div class="flex justify-between items-center border-dashed border-b border-white pb-8">
+            <div class="space-y-4">
+                <h2 class="text-2xl font-semibold">RA-Ticket</h2>
+                <p class="text-gray-200">RA-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div class="space-y-4">
+                <p>Download our app</p>
+                <div class="flex border border-white rounded-lg p-2">
+                    <img src="./images/playstore.png" alt="">
+                    <div>
+                        <p>Get on</p>
+                        <P class="text-xl font-semibold">Google Play</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between pt-6">
+            <p><small>@all rights reserved, </small>Comfy Travels Ticket Services LTD.</p>
+            <ul class="lg:flex gap-4">
+                <li>Terms & condition</li>
+                <li>Return & refund policy</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 

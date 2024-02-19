@@ -99,3 +99,23 @@ function submitForTicket() {
 document.getElementById("phone-number").addEventListener("change", function () {
     submitForTicket();
 })
+
+function hideElement(elementId) {
+    document.getElementById(elementId).classList.add("hidden");
+}
+function showElement(elementId) {
+    document.getElementById(elementId).classList.remove("hidden");
+}
+
+document.getElementById("submit-button").addEventListener("click", function () {
+    hideElement("header");
+    hideElement("main");
+    hideElement("footer");
+    showElement("popup-div");
+})
+document.getElementById("popup-button").addEventListener("click", function () {
+    showElement("header");
+    showElement("main");
+    showElement("footer");
+    hideElement("popup-div");
+})
